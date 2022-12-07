@@ -5,12 +5,16 @@ import '@fontsource/roboto/400.css'
 import '@fontsource/roboto/500.css'
 import '@fontsource/roboto/700.css'
 
-import styles from './styles.module.css'
+import Table from './Component/Table'
 
 interface Props {
-  text: string
+  text?: string
 }
 
-export const ExampleComponent = ({ text }: Props) => {
-  return <div className={styles.test}>Example Component: {text}</div>
+export const ExampleComponent = ({}: Props) => {
+  return (
+    <div id='ReactJSONToPageContainer'>
+      <Table></Table>
+    </div>
+  )
 }
